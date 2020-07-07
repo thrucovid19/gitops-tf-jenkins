@@ -44,4 +44,3 @@ resource "aws_security_group" "default" {
   }
 
 }
-© 2020 GitHub, Inc.
