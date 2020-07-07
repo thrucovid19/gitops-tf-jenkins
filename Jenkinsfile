@@ -4,10 +4,12 @@ String credentialsId = 'awsCredentials'
 try {
   stage('checkout') {
     node {
+      cleanWs {
         cleanWhenAborted(true)
         cleanWhenFailure(true)
         }
-        checkout scm
+      }
+      checkout scm
     }
   }
 
